@@ -58,7 +58,8 @@ npm install------
 
 # 9. Deploy the application to a production environment
 
-ARRANGEMENT ON THE SERVER
+
+                                  ARRANGEMENT ON THE SERVER
 
 <!-- declarations  -->
 
