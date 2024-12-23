@@ -1,4 +1,4 @@
-<!-- HERE IS WHAT IS REQUIRED IN ORDER TO START A FULL STACK PROJECT FROM SCRATCH -->
+HERE IS WHAT IS REQUIRED IN ORDER TO START A FULL STACK PROJECT FROM SCRATCH 
 
                                GUIDE
 
@@ -19,30 +19,30 @@ b.i use embeded javascript in short ejs to write js from the server
 c.HERE IS A LIST OF DEPENDENCIES YOU WILL USE OR INSTALL
 npm install------
 
-<!-- Core Backend Dependencies -->
+ Core Backend Dependencies 
 
 0.dotenv
 1.express
 2.mysql
 
-<!-- Middleware -->
+ Middleware 
 
 3.body-parser
 4.multer
 
-<!-- Authentication and Security -->
+Authentication and Security 
 
 5.bcryptjs
 
-<!-- View Engine -->
+ View Engine 
 
 6.EJS
 
-<!-- Utilities -->
+ Utilities 
 
 7.express-session
 
-<!-- restart the server -->
+ restart the server 
 
 8.node
 
@@ -61,7 +61,7 @@ npm install------
 
                                   ARRANGEMENT ON THE SERVER
 
-<!-- declarations  -->
+ declarations  
 
 //connect to express js
 const express = require("express");
@@ -77,7 +77,7 @@ const upload = multer({ dest: "public/listingimages" });
 const profile = multer({ dest: "public/profilepic" });
 require("dotenv").config();
 
-<!-- setting up the database -->
+ setting up the database 
 
 // Import MySQL
 const connection = mysql.createConnection({
@@ -87,7 +87,7 @@ password: "",
 database: "househunt",
 });
 
-<!-- session management -->
+ session management 
 
 //express-session
 server.use(
@@ -98,7 +98,7 @@ saveUninitialized: false,
 })
 );
 
-<!-- middleware -->
+ middleware 
 
 // Session middleware
 server.use((req, res, next) => {
@@ -131,7 +131,7 @@ next();
 }
 });
 
-<!-- parsers -->
+ parsers 
 
 // Parse incoming JSON requests
 server.use(bodyParser.json());
@@ -141,4 +141,4 @@ server.set("view engine", "ejs");
 server.use(express.static("PUBLIC"));
 server.use(express.urlencoded({ extended: true }));
 
-<!-- routes -->
+ routes 
